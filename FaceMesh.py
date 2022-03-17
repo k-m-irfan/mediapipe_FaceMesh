@@ -3,9 +3,7 @@
 #mediapipe version = 0.8.9.1
 
 import cv2
-import numpy as np
 import mediapipe as mp
-import time
 
 cam = cv2.VideoCapture(0)
 # cam = cv2.VideoCapture("http://192.168.1.2:4747/video")# connecting to ip cam
@@ -26,7 +24,6 @@ while True:
     results = faceMesh.process(frameRGB)
     if results.multi_face_landmarks != None:
         for faceLandmarks in results.multi_face_landmarks:
-            tNow = time.time()
             # connections= mp.solutions.face_mesh_connections.FACEMESH_LIPS
             # connections= mp.solutions.face_mesh_connections.FACEMESH_LEFT_EYE
             # connections= mp.solutions.face_mesh_connections.FACEMESH_LEFT_IRIS
@@ -43,6 +40,3 @@ while True:
         break
 cam.release()
 cv2.destroyAllWindows()
-
-
-
