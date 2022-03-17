@@ -1,6 +1,6 @@
 # Mediapipe_FaceMesh
 
-Here -> https://github.com/k-m-irfan/simplified_mediapipe_face_landmarks, I tried to isolate and simplify face landmarks for selecting points around specific facial features (eyes, iris, eyebrows, lips and, face boundary). But there's an inbuilt and easier way. We can use the connections argument of the draw_landmarks function of drawing_utils. We can even manually list the points of interest here.
+Here -> https://github.com/k-m-irfan/simplified_mediapipe_face_landmarks, I tried to isolate and simplify face landmarks for selecting points around specific facial features (eyes, iris, eyebrows, lips, and face boundary). But there's an easier way to do it. We can use the connections argument of the draw_landmarks function of drawing_utils. We can even manually list the points of interest here to make a mesh.
 
 <p align="center"> <img src="https://user-images.githubusercontent.com/80172338/158805135-9ccb68ad-0d23-4645-8ebf-b8fcdb3eda89.gif"> </p>
 
