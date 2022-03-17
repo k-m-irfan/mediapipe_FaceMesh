@@ -23,3 +23,9 @@ Here -> https://github.com/k-m-irfan/simplified_mediapipe_face_landmarks, I trie
 - **Face Boundary:** ```mp.solutions.face_mesh_connections.FACEMESH_FACE_OVAL```
 
 - **Full face mesh:** ```mp.solutions.face_mesh_connections.FACEMESH_TESSELATION```
+
+## Environment
+
+ - python version 3.9.7
+ - opncv-python version = 4.5.4.6
+ - mediapipe version = 0.8.9.1
