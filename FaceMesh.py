@@ -34,6 +34,7 @@ while True:
             # connections= mp.solutions.face_mesh_connections.FACEMESH_FACE_OVAL
             connections= mp.solutions.face_mesh_connections.FACEMESH_TESSELATION
             mpDraw.draw_landmarks(frame,faceLandmarks,connections,drawSpecCircle,drawSpecLine)
+            
     cv2.imshow('Mesh', frame)
     if cv2.waitKey(1) & 0xff == ord('q'):
         print('end')
